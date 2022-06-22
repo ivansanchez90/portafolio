@@ -280,7 +280,7 @@ section.skills {
 .knowledge > div:hover h3,
 .tools > div:hover h3 {
   opacity: 1;
-  transform: translate(0px, -142px);
+  transform: translate(0px, -132px);
 }
 
 /** About **/
@@ -322,6 +322,10 @@ footer {
   background-color: var(--dark2);
   text-align: center;
   color: var(--secondary-light);
+}
+
+footer>.container>p {
+  padding-bottom: 10px;
 }
 
 /** Modals **/
