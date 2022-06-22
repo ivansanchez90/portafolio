@@ -5,8 +5,8 @@
 }
 
 :root {
-  --primary: #014c78;
-  --secondary: #f26e11;
+  --primary: #48416C;
+  --secondary: #EDC18D;
   --secondary-light: #f3f3f3;
   --dark1: #282828;
   --dark2: #050505;
@@ -60,7 +60,7 @@ body {
 .hero img {
   width: 100%;
   height: 530px;
-  opacity: 0.35;
+  opacity: 0.4;
 }
 
 span {
@@ -115,7 +115,7 @@ span {
   width: 320px;
   height: 450px;
   background-color: var(--dark1);
-  opacity: 0.7;
+  opacity: 0.8;
   z-index: 10;
   top: 70px;
 }
@@ -125,7 +125,7 @@ span {
   height: 290px;
   border-radius: 50%;
   border: solid 30px var(--primary);
-  opacity: 0.2;
+  opacity: 0.4;
   z-index: 19;
   top: 90px;
 }
@@ -207,11 +207,23 @@ span {
 
 .briefcase-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   width: 90%;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .briefcase-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .briefcase-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .briefcase-grid img {
@@ -293,7 +305,7 @@ section.skills {
   display: flex;
   width: 90%;
   margin: 0 auto;
-  padding: 50px 0 50px;
+  padding: 135px 0 135px;
 }
 
 .about p {
@@ -307,6 +319,9 @@ section.skills {
 .social {
   border-left: var(--secondary) 5px solid;
   padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .social img {
@@ -325,7 +340,7 @@ footer {
 }
 
 footer>.container>p {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 /** Modals **/
