@@ -5,10 +5,10 @@
 }
 
 :root {
-  --primary: #18db86;
-  --secondary: white;
-  --secondary-light: rgb(173, 173, 173);
-  --dark1: #222222;
+  --primary: #014c78;
+  --secondary: #f26e11;
+  --secondary-light: #f3f3f3;
+  --dark1: #282828;
   --dark2: #050505;
 }
 
@@ -207,10 +207,11 @@ span {
 
 .briefcase-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 15px;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .briefcase-grid img {
