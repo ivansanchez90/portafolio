@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rubik:wght@400;600&family=Signika:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rubik:wght@400;600&family=Signika:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
-        <div class="hero">
-            <div class="container">
 
-            
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Portafolio</a></li>
-                        <li><a href="#">Sobre mí</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <img src="./img/fondo-desktop.jpg" alt="imagen de fondo">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#briefcase">Portafolio</a></li>
+                    <li><a href="#about-me">Sobre mí</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+
+    </header>
+
+    <section>
+        <div class="hero" id="inicio">
+            <div class="container">
+                <img src="./img/fondo-desktop.jpg" alt="imagen de fondo">
+            </div>
+        </div>
         <div class="profile">
             <div class="square"></div>
             <div class="circle-trans"></div>
@@ -37,26 +45,27 @@
             <div class="square-text">IVAN SANCHEZ</div>
             <div class="square-text-2"><span>FULL STACK DEVELOPER</span></div>
             <div class="contact-icon">
-                <a href="https://github.com/ivansanchez90"><img src="./img/github.svg" alt="github"></a>
-                <a href="https://www.linkedin.com/in/ivan-nicolas-sanchez-oliva/"></a><img src="./img/linkedin.svg" alt="linkedin"></a>
-                <a href="#"></a><img src="./img/message.svg" alt="message"></a>
+                <a href="https://github.com/ivansanchez90" target="_blank"><img src="./img/github.svg" alt="github"></a>
+                <a href="https://www.linkedin.com/in/ivan-nicolas-sanchez-oliva/" target="_blank"></a><img src="./img/linkedin.svg"
+                    alt="linkedin"></a>
+                <a href="#"></a><img src="./img/message.svg" alt="message" target="_blank"></a>
             </div>
             <div class="square-text-3"><a href="#about-me"><span>About me |</span> Sobre Mi</a></div>
 
         </div>
-    
-    </header>
+
+    </section>
 
     <section class="briefcase" id="briefcase">
         <div class="briefcase-section container">
             <h2><span>Briefcase |</span> Portafolio</h2>
             <div class="briefcase-grid">
-                <div><img src="./img/pagina-web-portafolio2022.png" alt=""></div>
-                <div><img src="./img/pagina-web-robodactav2.jpg" alt=""></div>
-                <div><img src="./img/pagina-web-dacorp.png" alt=""></div>
-                <div><img src="./img/pagina-web-ionic.jpg" alt=""></div>
-                <div><img src="./img/pagina-web-repar.jpg" alt=""></div>
-                <div><img src="./img/pagina-web-neuroPanama.jpg" alt=""></div>
+                <div><a data-modal-id="pw-port"><img src="./img/pagina-web-portafolio2022.png" alt=""></a></div>
+                <div><a data-modal-id="pw-rob"><img src="./img/pagina-web-robodactav2.jpg" alt=""></a></div>
+                <div><a data-modal-id="pw-dacorp"><img src="./img/pagina-web-dacorp.png" alt=""></a></div>
+                <div><a data-modal-id="pw-ionic"><img src="./img/pagina-web-ionic.jpg" alt=""></a></div>
+                <div><a data-modal-id="pw-repar"><img src="./img/pagina-web-repar.jpg" alt=""></a></div>
+                <div><a data-modal-id="pw-neuro"><img src="./img/pagina-web-neuroPanama.jpg" alt=""></a></div>
 
             </div>
         </div>
@@ -93,7 +102,7 @@
                     </div>
 
                 </div>
-            </div>   
+            </div>
 
             <div class="tools-part">
                 <h2><span>Dev Tools |</span> Herramientas</h2>
@@ -110,7 +119,11 @@
                         <img src="./img/git-icon.png" alt="">
                         <h3>GIT</h3>
                     </div>
-                    <div>
+                    <div></a>
+                        </a>
+                        </a>
+                        </a>
+                        </a>
                         <img src="./img/npm-icon.png" alt="">
                         <h3>NPM</h3>
                     </div>
@@ -128,25 +141,41 @@
                     </div>
 
                 </div>
-            </div>   
+            </div>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about-me">
         <div class="about-flex container">
             <div class="about-info">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo at maiores necessitatibus, eveniet veniam deleniti voluptatum modi totam repellendus sint rem! Non, explicabo temporibus dolore cum ratione odit cupiditate. Earum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo at maiores necessitatibus, eveniet
+                    veniam deleniti voluptatum modi totam repellendus sint rem! Non, explicabo temporibus dolore cum
+                    ratione odit cupiditate. Earum.
                 </p>
                 <p><br>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo at maiores necessitatibus, eveniet veniam deleniti voluptatum modi totam repellendus sint rem! Non, explicabo temporibus dolore cum ratione odit cupiditate. Earum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo at maiores necessitatibus, eveniet
+                    veniam deleniti voluptatum modi totam repellendus sint rem! Non, explicabo temporibus dolore cum
+                    ratione odit cupiditate. Earum.
                 </p>
             </div>
             <div class="social">
-                <a href="#"><img src="./img/github.svg" alt=""></a>
-                <a href="#"><img src="./img/linkedin.svg" alt=""></a>
-                <a href="#"><img src="./img/youtube.svg" alt=""></a>
-                <a href="#"><img src="./img/message.svg" alt=""></a>
+                <a href="#" target="_blank"><img src="./img/github.svg" alt=""></a>
+                <a href="#" target="_blank"><img src="./img/linkedin.svg" alt=""></a>
+                <a href="#" target="_blank"><img src="./img/youtube.svg" alt=""></a>
+                <a href="#" target="_blank"><img src="./img/message.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="icon-elements">
+            <div>
+                <a href="#" target="_blank">
+                    <img src="./img/youtube.icon.png" alt="">
+                    <span>/ Ver video del proyecto Paso a paso desde cero</span></a>
+            </div>
+            <div>
+                <a href="#" target="_blank">
+                    <img src="./img/github-icon.png" alt="">
+                    <span>/ Ver código de este proyecto desde el repositorio</span></a>
             </div>
         </div>
     </section>
@@ -156,6 +185,180 @@
             <p>© 2022 Copyright | Designed by Ivan Sanchez</p>
         </div>
     </footer>
-    
+
+ 
+    <!-- Modal Section -->
+    <div id="pw-port" class="eins-modal">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview"><img src="/img/2pagina-web-portafolio2022.png" alt=""></div>
+                <div class="eins-modal-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae tenetur, voluptas
+                        laudantium non dignissimos explicabo, corporis vitae, deleniti aliquid maiores !</p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a
+                            href="https://webdosproyect.netlify.app/" target="_blank">https://webdosproyect.netlify.app/</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="/img/wordpress-icon.png" alt="">
+                            <img src="/img/woo-icon.png" alt="">
+                            <img src="/img/css-icon.png" alt="">
+                            <img src="/img/seo-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Modal Section -->
+    <div id="pw-rob" class="eins-modal">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview"><img src="/img/2pagina-web-robodacta.png" alt=""></div>
+                <div class="eins-modal-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae tenetur, voluptas
+                        laudantium non dignissimos explicabo, corporis vitae, deleniti aliquid maiores !</p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a
+                            href="https://ivansanchez90.github.io/react-app/" target="_blank">https://ivansanchez90.github.io/react-app/</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="/img/wordpress-icon.png" alt="">
+                            <img src="/img/woo-icon.png" alt="">
+                            <img src="/img/css-icon.png" alt="">
+                            <img src="/img/seo-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Modal Section -->
+    <div id="pw-dacorp" class="eins-modal">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview"><img src="/img/2pagina-web-dacorp.png" alt=""></div>
+                <div class="eins-modal-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae tenetur, voluptas
+                        laudantium non dignissimos explicabo, corporis vitae, deleniti aliquid maiores !</p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a
+                            href="https://ivansanchez90.github.io/react-app/" target="_blank">https://ivansanchez90.github.io/react-app/</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="/img/wordpress-icon.png" alt="">
+                            <img src="/img/woo-icon.png" alt="">
+                            <img src="/img/css-icon.png" alt="">
+                            <img src="/img/seo-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Modal Section -->
+    <div id="pw-ionic" class="eins-modal">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview"><img src="/img/2pagina-web-ionic.png" alt=""></div>
+                <div class="eins-modal-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae tenetur, voluptas
+                        laudantium non dignissimos explicabo, corporis vitae, deleniti aliquid maiores !</p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a
+                            href="https://ivansanchez90.github.io/react-app/" target="_blank">https://ivansanchez90.github.io/react-app/</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="/img/wordpress-icon.png" alt="">
+                            <img src="/img/woo-icon.png" alt="">
+                            <img src="/img/css-icon.png" alt="">
+                            <img src="/img/seo-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Modal Section -->
+    <div id="pw-repar" class="eins-modal">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview"><img src="/img/2pagina-web-repar.png" alt=""></div>
+                <div class="eins-modal-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae tenetur, voluptas
+                        laudantium non dignissimos explicabo, corporis vitae, deleniti aliquid maiores !</p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a
+                            href="https://ivansanchez90.github.io/react-app/" target="_blank">https://ivansanchez90.github.io/react-app/</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="/img/wordpress-icon.png" alt="">
+                            <img src="/img/woo-icon.png" alt="">
+                            <img src="/img/css-icon.png" alt="">
+                            <img src="/img/seo-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Modal Section -->
+    <div id="pw-neuro" class="eins-modal">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview"><img src="/img/2pagina-web-neuroPanama.png" alt=""></div>
+                <div class="eins-modal-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae tenetur, voluptas
+                        laudantium non dignissimos explicabo, corporis vitae, deleniti aliquid maiores !</p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a
+                            href="https://ivansanchez90.github.io/react-app/" target="_blank">https://ivansanchez90.github.io/react-app/</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="/img/wordpress-icon.png" alt="">
+                            <img src="/img/woo-icon.png" alt="">
+                            <img src="/img/css-icon.png" alt="">
+                            <img src="/img/seo-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
+
 </html>
